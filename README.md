@@ -101,4 +101,11 @@ Be sure to provide him with clean and well-structured code.
 ---
 
 ## How to run
-Please fill this section as part of the assignment.
+There are 4 different coding files.
+The first one is the jupyter notebook. Here I correctly imported the dataset and analyzed it. Afterwards, I developed a Multi-Layer-Perceptron Classifier and tested it. Then, I tried to make the model interpretable by the analysis of the most important features of the model and I checked the performances of the model by looking at the main metrics.
+
+File pipeline.py contains the end-to-end pipeline to train a model given a new similar dataset. At the end, the model is saved in order to be recalled by the REST API and save time in training.
+
+File app.py is the REST API which expose the model predictions. It has to run when client would test the model developed.
+
+File apiclient.py is the python file which has to be launched in order to obtain predictions for a test dataset. The dataset tested has to be called 'X_test.csv' and it has to be in the same folder of the apiclient.py
